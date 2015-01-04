@@ -1,0 +1,213 @@
+@import 'variables'; 
+@import 'mixins'; 
+@import 'layouts'; 
+
+/***** GLOBAL FONT CALLS *****/
+@import url(//fonts.googleapis.com/css?family=Lato:700);
+@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+/***** GLOBAL PROPERTIES ******/
+body { 
+	background:$body-bk;
+	padding:$body-padding;
+	color: $body-text-color;
+	font-family:$body-fonts;
+}
+
+/***** NAV BAR VIEW PROPERTIES ******/
+.navbar-wrapper {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 20;
+	.container {
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.navbar {
+		padding-right: 15px;
+		padding-left: 15px;
+		.container {
+		 	width: auto;
+		}
+		a{
+			color:$navbar-text-logo-color;
+		}
+		li a{
+			color:$navbar-text-color;
+		}
+	}	
+}
+
+/***** 404 Page Properties ******/
+.error-template {
+	padding: 100px 15px 70px;
+	text-align: center;
+	.error-actions {
+		margin-top:15px;
+		margin-bottom:15px;
+		.btn { 
+			margin-right:10px; 
+		}
+	}
+}
+
+/***** CAROUSEL SLIDER VIEW PROPERTIES *****/
+.carousel {
+	height: $carousel-slider-height;
+	margin-bottom: $carousel-slider-bottom-margin;
+	.item {
+		height: $carousel-slider-height;	
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			min-width: 100%;
+			height: $carousel-slider-height;
+		}
+	}
+	.carousel-caption {
+	  	z-index: 10;
+	}
+}
+
+/***** TRI PART VIEW PROPERTIES ******/ 
+.marketing{
+	.col-lg-4 {
+		margin-bottom: 20px;
+		text-align: center;
+		p {
+			margin-right: 10px;
+			margin-left: 10px;
+		}	
+	}
+	h2 {
+	  	font-weight: normal;
+	}
+}
+
+/****** TWO PART VIEW PROPERTIES *******/
+.featurette{
+	.featurette-divider {
+	  	margin: 80px 0; /* Space out the Bootstrap <hr> more */
+	}
+	.featurette-heading {
+		font-weight: 300;
+		line-height: 1;
+		letter-spacing: -1px;
+	}	
+}
+
+/***** SOCIAL MEDIA 1 VIEW PROPERTIES *****/
+#social {
+	-webkit-transform:scale($social-media-icon-scale);
+	-moz-transform:scale($social-media-icon-scale);
+	-o-transform:scale($social-media-icon-scale); 
+	-webkit-transition-duration:$social-media-icon-animation-speed; 
+	-moz-transition-duration:$social-media-icon-animation-speed;
+	-o-transition-duration:$social-media-icon-animation-speed;
+    &:hover {
+		-webkit-transform:scale($social-media-icon-hover-scale); 
+		-moz-transform:scale($social-media-icon-hover-scale); 
+		-o-transform:scale($social-media-icon-hover-scale); 
+    }
+	&.social-fb:hover {
+		color:$facebook-icon-hover-color;
+	}
+	&.social-tw:hover {
+		color:$twitter-icon-hover-color;
+	}
+	&.social-gp:hover {
+		color:$googleplus-icon-hover-color;
+	}
+	&.social-em:hover {
+		color:$email-icon-hover-color;
+	}
+}     
+
+/***** BACK TO TOP 1 VIEW PROPERTIES *****/
+.back-to-top-1 {
+	display: inline-block;
+	height: $back-top-mobile-size;
+	width: $back-top-mobile-size;
+	position: fixed;
+	bottom: 40px;
+	right: 10px;
+	box-shadow: 0 0 10px rgba(#000, .05);
+	overflow: hidden; 
+	text-indent: 100%;
+	white-space: nowrap;
+	background: rgba($back-top-bk-color, $back-top-bk-opacity) url(../img/icons/backto-top-arrow.svg) no-repeat center 50%;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: opacity .3s 0s, visibility 0s .3s;
+	-moz-transition: opacity .3s 0s, visibility 0s .3s;
+	transition: opacity .3s 0s, visibility 0s .3s;
+	&.cd-is-visible, &.cd-fade-out, .no-touch &:hover {
+		-webkit-transition: opacity .3s 0s, visibility 0s 0s;
+		-moz-transition: opacity .3s 0s, visibility 0s 0s;
+		transition: opacity .3s 0s, visibility 0s 0s;
+	}
+	&.back-to-top-1-visible {
+		visibility: visible;
+		opacity: $back-top-bk-hover-opacity;
+	}
+	&.back-to-top-1-fade-out {
+		opacity: $back-top-bk-opacity;
+	}
+	.no-touch &:hover {
+		background-color: rgba($back-top-bk-color, 1);
+		opacity: $back-top-bk-hover-opacity;
+	}
+	@include MQ(M) {
+		right: 20px;
+		bottom: 20px;
+		height: $back-top-tablet-size;
+		width: $back-top-tablet-size;		
+	}
+	@include MQ(L) {
+		height: $back-top-desktop-size;
+		width: $back-top-desktop-size;
+		right: 30px;
+		bottom: 30px;
+	}
+}
+
+/****** DESKTOP & LARGE TABLET MEDIA QUERY *******/
+@media (min-width: 768px) {
+
+	/***** NAVBAR PROPERTIES *****/
+	.navbar-wrapper {
+		margin-top: 20px;
+		.container {
+		    padding-right: 15px;
+		    padding-left: 15px;
+		}		
+		.navbar {
+		    padding-right: 0;
+		    padding-left: 0;
+		    border-radius: $nav-bar-border-radius;
+		}
+	}
+
+	/***** CAROUSEL SLIDER PROPERTIES *****/
+	.carousel-caption p {
+		margin-bottom: 20px;
+		font-size: 21px;
+		line-height: 1.4;
+	}
+
+	/***** TRIPART PROPERTIES *****/ 
+	.featurette-heading {
+		font-size: 50px;
+	}
+}
+
+/***** DESKTOP MEDIA QUERY *****/
+@media (min-width: 992px) {
+	/***** TRIPART PROPERTIES *****/
+	.featurette-heading {
+		margin-top: 120px;
+	}
+}

@@ -1,0 +1,35 @@
+// GLOBAL VARIABLES 
+$body-bk:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAxMC8yOS8xMiKqq3kAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzVxteM2AAABHklEQVRIib2Vyw6EIAxFW5idr///Qx9sfG3pLEyJ3tAwi5EmBqRo7vHawiEEERHS6x7MTMxMVv6+z3tPMUYSkfTM/R0fEaG2bbMv+Gc4nZzn+dN4HAcREa3r+hi3bcuu68jLskhVIlW073tWaYlQ9+F9IpqmSfq+fwskhdO/AwmUTJXrOuaRQNeRkOd5lq7rXmS5InmERKoER/QMvUAPlZDHcZRhGN4CSeGY+aHMqgcks5RrHv/eeh455x5KrMq2yHQdibDO6ncG/KZWL7M8xDyS1/MIO0NJqdULLS81X6/X6aR0nqBSJcPeZnlZrzN477NKURn2Nus8sjzmEII0TfMiyxUuxphVWjpJkbx0btUnshRihVv70Bv8ItXq6Asoi/ZiCbU6YgAAAABJRU5ErkJggg==);
+$body-text-color:#5a5a5a; 
+$body-fonts:"lato","Helvetica Neue", Helvetica, Arial, sans-serif;
+$body-padding:0 0 40px 0;
+
+//NAVBAR VARIABLES
+$navbar-text-color:#9d9d9d;
+$navbar-text-logo-color:#9d9d9d;
+$nav-bar-border-radius:4px;
+
+//FORM VALIDATION VARIABLES
+$valid-input-border:#78FA89;
+$invalid-input-border:#FA787E;
+
+//CAROUSEL SLIDER VARIABLES
+$carousel-slider-height:450px;
+$carousel-slider-bottom-margin:60px;
+
+//SOCIAL MEDIA 1 VARIABLES
+$facebook-icon-hover-color: #3B5998;
+$twitter-icon-hover-color:#4099FF;
+$googleplus-icon-hover-color:#d34836;
+$email-icon-hover-color:#f39c12;
+$social-media-icon-scale:0.8;
+$social-media-icon-hover-scale:1.1;
+$social-media-icon-animation-speed:0.5s;
+
+// BACK TO TOP 1 VARIABLES
+$back-top-bk-color: #777; 
+$back-top-bk-opacity:.8;
+$back-top-bk-hover-opacity:1;
+$back-top-desktop-size:60px;
+$back-top-tablet-size:50px;
+$back-top-mobile-size:40px;
