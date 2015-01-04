@@ -15,9 +15,13 @@ Laravel is accessible, yet powerful, providing powerful tools needed for large, 
 ## Official Documentation
 
 Documentation for the entire Laravel framework can be found on the [Laravel website](http://laravel.com/docs).
+
 Documentation for the Frozennode can be found on the [Frozennode website](http://administrator.frozennode.com/).
+
 Documentation for Bootstrap can be found on the [Bootstrap website](http://getbootstrap.com/).
+
 Documentation for Bootstrap Validator can be found on the [Bootstrap Validator Website](http://formvalidation.io/).
+
 Documentation for SASS/SCSS can be found on the [SASS website](http://sass-lang.com/).
 
 ### Contributing To Laravel
@@ -26,8 +30,9 @@ Documentation for SASS/SCSS can be found on the [SASS website](http://sass-lang.
 
 ### License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
-The Frozennode framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+
+The Frozennode framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
 
 ### Resources
 
@@ -36,10 +41,17 @@ Bootstrap Snippets [Bootsnipp website](http://bootsnipp.com/).
 ## Installation
 
 Clone the Repository to your machine/server.
+
 Create your mySQL database.
+
 Add the website URL in line 29 of the /app/config/app.php file.
+
 Enter your database connection settings in the /app/config/database.php file.
+
 Edit file permissions as needed with "chmod 755 <project folder>" (You may need to run as sudo).
+
 Run "composer install" from the projects root folder from terminal (You may need to run as sudo).
+
 For Development run "php artisan serve" (You may need to run as sudo) to envoke.
+
 For Production you will need to create and configure your Apache sites-enabled file [Apache Docs](http://httpd.apache.org/docs/current/vhosts/examples.html), [Digital Ocean Resource](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts) . 
