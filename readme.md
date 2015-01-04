@@ -45,7 +45,7 @@ Codebright PDF Book Tutorial [Link 1](http://www.blog.flds.fr/site/assets/files/
 
 ## Installation
 
-Clone the Repository to your machine/server.
+Clone the Repository to your machine/server.  Private Repo (git@bitbucket.org:jeremykenedy/project_jk_laravel_cms.git).
 
 Create your mySQL database.
 
