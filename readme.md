@@ -38,6 +38,11 @@ The Frozennode framework is open-sourced software licensed under the [MIT licens
 
 Bootstrap Snippets [Bootsnipp website](http://bootsnipp.com/).
 
+Laracast Video Tutorials [Laracast website](https://laracasts.com/).
+
+Codebright PDF Book Tutorial [Link 1](http://www.blog.flds.fr/site/assets/files/1212/codebright-1.pdf) [Link 2](http://demo.assets.adyax.com/sites/default/files/asset/document/laravel-codebright-2013-06.pdf).
+
+
 ## Installation
 
 Clone the Repository to your machine/server.
