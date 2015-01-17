@@ -55,9 +55,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'laraadmin',
+			'database'  => 'laranode',
 			'username'  => 'root',
-			'password'  => '',
+			'password'  => 'password',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
@@ -66,9 +66,9 @@ return array(
 		'pgsql' => array(
 			'driver'   => 'pgsql',
 			'host'     => 'localhost',
-			'database' => 'laraadmin',
+			'database' => 'laranode',
 			'username' => 'root',
-			'password' => '',
+			'password' => 'password',
 			'charset'  => 'utf8',
 			'prefix'   => '',
 			'schema'   => 'public',
@@ -77,9 +77,9 @@ return array(
 		'sqlsrv' => array(
 			'driver'   => 'sqlsrv',
 			'host'     => 'localhost',
-			'database' => 'laraadmin',
+			'database' => 'laranode',
 			'username' => 'root',
-			'password' => '',
+			'password' => 'password',
 			'prefix'   => '',
 		),
 

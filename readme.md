@@ -42,7 +42,6 @@ Laracast Video Tutorials [Laracast website](https://laracasts.com/).
 
 Codebright PDF Book Tutorial [Link 1](http://www.blog.flds.fr/site/assets/files/1212/codebright-1.pdf) [Link 2](http://demo.assets.adyax.com/sites/default/files/asset/document/laravel-codebright-2013-06.pdf).
 
-
 ## Installation
 
 Clone the Repository to your machine/server.  Private Repo (git@bitbucket.org:jeremykenedy/project_jk_laravel_cms.git).
@@ -53,9 +52,11 @@ Add the website URL in line 29 of the /app/config/app.php file.
 
 Enter your database connection settings in the /app/config/database.php file.
 
-Edit file permissions as needed with "chmod 755 <project folder>" (You may need to run as sudo).
+Edit file permissions as needed with "chmod 755 -R <project folder>" (You may need to run as sudo or as 777 during install).
 
 Run "composer install" from the projects root folder from terminal (You may need to run as sudo).
+
+* Note: If you do not have composer installed, [MAC with MAMP](http://webdevtuts.co.uk/install-composer-mac-mamp/) or [LAMP](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-your-vps-running-ubuntu)
 
 For Development run "php artisan serve" (You may need to run as sudo) to envoke.
 
