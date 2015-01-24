@@ -68,24 +68,25 @@ Add the website URL in line 29 of the /app/config/app.php file.
 
 ### DEFINE DATABASE SETTINGS:
 Enter your database connection settings in the /app/config/database.php file.
-	* [Important Note](http://stackoverflow.com/questions/19475762/setting-up-laravel-on-a-mac-php-artisan-migrate-error-no-such-file-or-directory): If you are using MAMP you need to add " 'unix_socket'   => '/Applications/MAMP/tmp/mysql/mysql.sock',  " to your 'mysql' array.
-	* Example 'database.php':
-	```php
-		'mysql' => array(
-			'driver'    => 'mysql',
-			'host'      => 'localhost',
-			**'unix_socket'   => '/Applications/MAMP/tmp/mysql/mysql.sock',**
-			'database'  => 'laranode',
-			'username'  => 'yourusername',
-			'password'  => 'yourpassword',
-			'charset'   => 'utf8',
-			'collation' => 'utf8_unicode_ci',
-			'prefix'    => '',
-		),
-	```
+
+* [Important Note](http://stackoverflow.com/questions/19475762/setting-up-laravel-on-a-mac-php-artisan-migrate-error-no-such-file-or-directory): If you are using MAMP you need to add " 'unix_socket'   => '/Applications/MAMP/tmp/mysql/mysql.sock',  " to your 'mysql' array.
+* Example 'database.php':
+```php
+	'mysql' => array(
+		'driver'    => 'mysql',
+		'host'      => 'localhost',
+		**'unix_socket'   => '/Applications/MAMP/tmp/mysql/mysql.sock',**
+		'database'  => 'laranode',
+		'username'  => 'yourusername',
+		'password'  => 'yourpassword',
+		'charset'   => 'utf8',
+		'collation' => 'utf8_unicode_ci',
+		'prefix'    => '',
+	),
+```
 
 ### SETUP COMPOSER
-
+* Edit file permissions as needed with "chmod 755 -R <project folder>" (You may need to run as sudo or as 777 during install).
 * Install [Composer](https://getcomposer.org/doc/00-intro.md): [MAC with MAMP](http://webdevtuts.co.uk/install-composer-mac-mamp/) or [LAMP](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-your-vps-running-ubuntu)
 * Edit file permissions as needed with "chmod 755 -R <project folder>" (You may need to run as sudo or as 777 during install).
 * Run 'composer install' from the projects root folder from terminal (You may need to run as sudo).
