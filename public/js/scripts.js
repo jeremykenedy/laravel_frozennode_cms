@@ -1,7 +1,9 @@
 $(document).ready(function() {
 	removeMobileHoverTap();
 	backToTop1();
+	$(".player").mb_YTPlayer();
 });
+
 
 //FUNCTION TO REMOVE MOBILE DEVICE DOUBLE TAP FOR ANCHOR TAGS WITH HOVER STATES - ADD .remove_tap CLASS TO ANCHOR TAG
 function removeMobileHoverTap(){	

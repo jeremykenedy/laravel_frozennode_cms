@@ -1,0 +1,51 @@
+@import 'variables'; 
+@import 'mixins'; 
+@import 'layouts'; 
+
+@import 'elements/fonts'; 
+@import 'elements/global'; 
+@import 'elements/nav'; 
+@import 'elements/social-media-bar1';
+@import 'elements/backtotop1'; 
+@import 'elements/email1'; 
+
+@import 'pages/home';
+@import 'pages/error404a'; 
+
+/****** DESKTOP & LARGE TABLET MEDIA QUERY *******/
+@media (min-width: 768px) {
+
+	/***** NAVBAR PROPERTIES *****/
+	.navbar-wrapper {
+		margin-top: 20px;
+		.container {
+		    padding-right: 15px;
+		    padding-left: 15px;
+		}		
+		.navbar {
+		    padding-right: 0;
+		    padding-left: 0;
+			@include border-radius($nav-bar-border-radius);
+		}
+	}
+
+	/***** CAROUSEL SLIDER PROPERTIES *****/
+	.carousel-caption p {
+		margin-bottom: 20px;
+		font-size: 21px;
+		line-height: 1.4;
+	}
+
+	/***** TRIPART PROPERTIES *****/ 
+	.featurette-heading {
+		font-size: 50px;
+	}
+}
+
+/***** DESKTOP MEDIA QUERY *****/
+@media (min-width: 992px) {
+	/***** TRIPART PROPERTIES *****/
+	.featurette-heading {
+		margin-top: 120px;
+	}
+}

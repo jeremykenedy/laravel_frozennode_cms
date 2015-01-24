@@ -1,0 +1,18 @@
+/***** CAROUSEL SLIDER VIEW PROPERTIES *****/
+.carousel {
+	height: $carousel-slider-height;
+	margin-bottom: $carousel-slider-bottom-margin;
+	.item {
+		height: $carousel-slider-height;	
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			min-width: 100%;
+			height: $carousel-slider-height;
+		}
+	}
+	.carousel-caption {
+	  	z-index: 10;
+	}
+}

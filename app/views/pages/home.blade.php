@@ -6,8 +6,9 @@
 
 @section('content')
 
-	@section('elements_carousel')
-		@include('elements.carousel')
+	@section('header')
+		@include('elements.video-bk')
+		{{-- @include('elements.carousel') --}}
 	@show
 
     <div class="container marketing">
@@ -35,6 +36,12 @@
 		@show
 
       	<hr class="featurette-divider">
+
+		@section('elements_emailq')
+			@include('elements.email1')
+		@show
+
+		<hr class="featurette-divider">
 
     </div>
 

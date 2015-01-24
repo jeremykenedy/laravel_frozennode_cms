@@ -1,0 +1,32 @@
+// REM FALLBACKS
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+//FOR TEXT SHADOW CROSS BROWSER
+@mixin text-shadow($one, $two, $three, $color) {
+    -webkit-text-shadow: $one $two $three $color;
+       -moz-text-shadow: $one $two $three $color;
+            text-shadow: $one $two $three $color;
+}
+
+//FOR BORDER RADIUS CROSS BROWSER
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+//FOR CUSTOM BORDER RADIUS CROSS BROWSER
+@mixin custom-border-radius($rad1,$rad1,$rad3,$rad4) {
+  -webkit-border-radius: $rad1 $rad1 $rad3 $rad4;
+     -moz-border-radius: $rad1 $rad1 $rad3 $rad4;
+      -ms-border-radius: $rad1 $rad1 $rad3 $rad4;
+          border-radius: $rad1 $rad1 $rad3 $rad4;
+}

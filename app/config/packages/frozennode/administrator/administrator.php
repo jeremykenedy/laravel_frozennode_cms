@@ -21,7 +21,7 @@ return array(
 	 *
 	 * @type string
 	 */
-	'model_config_path' => app('path') . '/config/administrator',
+	'model_config_path' => app('path') . '/config/administrator/views',
 
 	/**
 	 * The path to your settings config directory
@@ -51,15 +51,25 @@ return array(
 	 * 		'Analytics' => array('E-Commerce' => 'page.ecommerce.analytics'),
 	 *	)
 	 */
+	//'menu' => array(
+ 		//'E-Commerce' => array('collections', 'products', 'product_images', 'orders'),
+ 		//'homepage_sliders',
+ 		//'users',
+ 		//'roles',
+ 		//'colors',
+ 		//'Settings' => array('settings.site', 'settings.ecommerce', 'settings.social'),
+  		//'Analytics' => array('E-Commerce' => 'page.ecommerce.analytics'),
+	//),
+
 	'menu' => array(
-	 		'E-Commerce' => array('collections', 'products', 'product_images', 'orders'),
-	 		'homepage_sliders',
-	 		'users',
-	 		'roles',
-	 		'colors',
-	 		'Settings' => array('settings.site', 'settings.ecommerce', 'settings.social'),
-	  		'Analytics' => array('E-Commerce' => 'page.ecommerce.analytics'),
-		),
+		'Films' => array('films', 'boxoffice'),
+		'actors',
+		'directors',
+		'theaters',
+		'Settings' => array('settings.site'),
+		//'settings.ecommerce',
+	),
+
 
 	/**
 	 * The permission option is the highest-level authentication check that lets you define a closure that should return true if the current user
@@ -69,7 +79,9 @@ return array(
 	 */
 	'permission'=> function()
 	{
-		return Auth::check();
+		//return Auth::check();
+		return true;
+		//return Auth::user()->hasRole('admin');
 	},
 
 	/**
@@ -85,14 +97,15 @@ return array(
 	 *
 	 * @type string
 	 */
-	'dashboard_view' => '',
+	'dashboard_view' => 'administrator.dashboard',
 
 	/**
 	 * The menu item that should be used as the default landing page of the administrative section
 	 *
 	 * @type string
 	 */
-	'home_page' => '',
+	//'home_page' => '',
+	'home_page' => 'settings.site',
 
 	/**
 	 * The route to which the user will be taken when they click the "back to site" button
@@ -114,6 +127,8 @@ return array(
 	 * @type string
 	 */
 	'logout_path' => false,
+	//'logout_path' => URL::route('logout'),
+	//'logout_path' => 'user/logout',
 
 	/**
 	 * This is the key of the return path that is sent with the redirection to your login_action. Session::get('redirect') will hold the return URL.
@@ -135,6 +150,6 @@ return array(
 	 *
 	 * @type array
 	 */
-	'locales' => array(),
+	'locales' => array('en','es','fr','de','ar','bg','ca','ja','fi','da','hr','ja','ru','uk','vi'),
 
 );

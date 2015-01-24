@@ -1,0 +1,25 @@
+/***** NAV BAR VIEW PROPERTIES ******/
+.navbar-wrapper {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 20;
+	.container {
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.navbar {
+		padding-right: 15px;
+		padding-left: 15px;
+		.container {
+		 	width: auto;
+		}
+		a{
+			color:$navbar-text-logo-color;
+		}
+		li a{
+			color:$navbar-text-color;
+		}
+	}	
+}

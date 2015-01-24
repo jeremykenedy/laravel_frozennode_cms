@@ -1,0 +1,32 @@
+/***** VIDEO SECTION VIEW PROPERTIES *****/
+.video-section {
+	text-align:center;
+	color:#fff;
+	margin:0 0 30px 0;
+	.pattern-overlay {
+		background-color: rgba(71, 71, 71, 0.59);
+		//background-color:#000;
+		padding: 110px 0 32px;
+		min-height: 496px; 
+	}	
+	h1{
+		font-size:3.5em;
+		/*font-family: 'Buenard', serif;*/
+		font-weight:900;
+		text-transform: uppercase;
+		margin: 40px auto 0px;
+		@include text-shadow(1px, 1px, 1px, #000);
+	} 
+	h3{
+		font-size: 25px;
+		/*font-weight:lighter;*/
+		margin: 0px auto 15px;
+		@include text-shadow(1px, 1px, 1px, #000);
+	}
+	.buttonBar{
+		display:none;
+	}
+	.player {
+		font-size: 0px;
+	}
+}

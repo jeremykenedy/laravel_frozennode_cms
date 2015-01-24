@@ -35,29 +35,76 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 The Frozennode framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
 
 ### Resources
+* Bootstrap Snippets [Bootsnipp website](http://bootsnipp.com/).
+* Laracast Video Tutorials [Laracast website](https://laracasts.com/).
+* Codebright PDF Book Tutorial [Link 1](http://www.blog.flds.fr/site/assets/files/1212/codebright-1.pdf) [Link 2](http://demo.assets.adyax.com/sites/default/files/asset/document/laravel-codebright-2013-06.pdf).
+* [Video on Frozennode base installation](http://vimeo.com/64693369).
+* [Laravel Documtation](http://laravel.com/docs/4.2)
 
-Bootstrap Snippets [Bootsnipp website](http://bootsnipp.com/).
-
-Laracast Video Tutorials [Laracast website](https://laracasts.com/).
-
-Codebright PDF Book Tutorial [Link 1](http://www.blog.flds.fr/site/assets/files/1212/codebright-1.pdf) [Link 2](http://demo.assets.adyax.com/sites/default/files/asset/document/laravel-codebright-2013-06.pdf).
+## Pre-Installation Recommendations
+* Install [nodejs](http://nodejs.org/download/).
+* Install [SASS/SCSS](http://sass-lang.com/install). (Boo SASS, YAY SCSS!)
+* Install [MAMP](http://www.mamp.info/en/).
 
 ## Installation
+* Clone the Repository to your machine/server.  Private Repo (git@bitbucket.org:jeremykenedy/project_jk_laravel_cms.git).
 
-Clone the Repository to your machine/server.  Private Repo (git@bitbucket.org:jeremykenedy/project_jk_laravel_cms.git).
+### Create your mySQL database.
+* Note: you can access mysql via command line in MAMP using the following command in terminal:
+```ruby
+/Applications/MAMP/Library/bin/mysql --host=localhost -uroot -ppassword
+```
+* Log in to mysql via command line using the following command in terminal:
+```python
+mysql -u root -p;
+```
+* Create the database via command line using the following command in terminal once logged in to mysql:
+```python
+create database laranode;
+```
 
-Create your mySQL database.
-
+### DEFINE WEBSITE URL:
 Add the website URL in line 29 of the /app/config/app.php file.
 
+### DEFINE DATABASE SETTINGS:
 Enter your database connection settings in the /app/config/database.php file.
+	* [Important Note](http://stackoverflow.com/questions/19475762/setting-up-laravel-on-a-mac-php-artisan-migrate-error-no-such-file-or-directory): If you are using MAMP you need to add " 'unix_socket'   => '/Applications/MAMP/tmp/mysql/mysql.sock',  " to your 'mysql' array.
+	* Example 'database.php':
+	```php
+		'mysql' => array(
+			'driver'    => 'mysql',
+			'host'      => 'localhost',
+			**'unix_socket'   => '/Applications/MAMP/tmp/mysql/mysql.sock',**
+			'database'  => 'laranode',
+			'username'  => 'yourusername',
+			'password'  => 'yourpassword',
+			'charset'   => 'utf8',
+			'collation' => 'utf8_unicode_ci',
+			'prefix'    => '',
+		),
+	```
 
-Edit file permissions as needed with "chmod 755 -R <project folder>" (You may need to run as sudo or as 777 during install).
+### SETUP COMPOSER
 
-Run "composer install" from the projects root folder from terminal (You may need to run as sudo).
+* Install [Composer](https://getcomposer.org/doc/00-intro.md): [MAC with MAMP](http://webdevtuts.co.uk/install-composer-mac-mamp/) or [LAMP](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-your-vps-running-ubuntu)
+* Edit file permissions as needed with "chmod 755 -R <project folder>" (You may need to run as sudo or as 777 during install).
+* Run 'composer install' from the projects root folder from terminal (You may need to run as sudo).
+* Run 'composer update' from the projects root folder from terminal (You may need to run as sudo).
 
-* Note: If you do not have composer installed, [MAC with MAMP](http://webdevtuts.co.uk/install-composer-mac-mamp/) or [LAMP](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-your-vps-running-ubuntu)
+### MIGRATIONS AND SEEDS:
+* See [Migration Documentation](http://laravel.com/docs/4.2/migrations) for creating project seeds and how to deploy them as migrations when you are ready to deploy and instance.
+* Use [Artisan](http://laravel.com/docs/4.2/artisan) to migrate database updates from terminal using the following command: 'php artisan migrate:install' (You may need to run as sudo).
+* Run Migration using 'php artisan migrate'.
 
-For Development run "php artisan serve" (You may need to run as sudo) to envoke.
+#### Development Environment Option 1
+* From terminal run 'php artisan serve' (You may need to run as sudo) to envoke instance.
+* This will tell you the http address to access your project via your web browser (e.g.  '[http://localhost:8000/](http://localhost:8000/)' ).
 
-For Production you will need to create and configure your Apache sites-enabled file [Apache Docs](http://httpd.apache.org/docs/current/vhosts/examples.html), [Digital Ocean Resource](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts) . 
+#### Development Environment Option 2
+* Install MAMP if you haven't already
+* Configure Mamp the URL of your choice.
+* Add file path the new URL created.
+* Save and Restart MAMP.
+
+#### Development/Production Environment Option 3
+* Create and configure your Apache sites-enabled file [Apache Docs](http://httpd.apache.org/docs/current/vhosts/examples.html), [Digital Ocean Resource](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts) . 

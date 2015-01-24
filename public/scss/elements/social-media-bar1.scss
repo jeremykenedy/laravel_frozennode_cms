@@ -1,0 +1,26 @@
+/***** SOCIAL MEDIA 1 VIEW PROPERTIES *****/
+#social {
+	-webkit-transform:scale($social-media-icon-scale);
+	-moz-transform:scale($social-media-icon-scale);
+	-o-transform:scale($social-media-icon-scale); 
+	-webkit-transition-duration:$social-media-icon-animation-speed; 
+	-moz-transition-duration:$social-media-icon-animation-speed;
+	-o-transition-duration:$social-media-icon-animation-speed;
+    &:hover {
+		-webkit-transform:scale($social-media-icon-hover-scale); 
+		-moz-transform:scale($social-media-icon-hover-scale); 
+		-o-transform:scale($social-media-icon-hover-scale); 
+    }
+	&.social-fb:hover {
+		color:$facebook-icon-hover-color;
+	}
+	&.social-tw:hover {
+		color:$twitter-icon-hover-color;
+	}
+	&.social-gp:hover {
+		color:$googleplus-icon-hover-color;
+	}
+	&.social-em:hover {
+		color:$email-icon-hover-color;
+	}
+} 
