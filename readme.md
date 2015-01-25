@@ -55,6 +55,7 @@ While this is mostly worked on from a mac, there is the funzies of wanting to do
 * Run [GitHub for Windows](https://windows.github.com/), setup [GitHub](https://github.com/) account, and [clone repository](https://github.com/jeremykenedy/laravel_frozennode_cms.git).
 * Open MAMP, setup a new URL, select the directory of the cloned repository on your local machine, and then save and restart MAMP as prompted.
 * Setup database through [phpMyAdmin](http://localhost/MAMP/index.php?page=phpmyadmin&language=English) via the "Webstart" link on the MAMP homescreen.
+* You may need to comment out the .htaccess file in order to not get a 403 error.
 
 ## Installation
 * Clone the Repository to your machine/server.  Private Repo (git@bitbucket.org:jeremykenedy/project_jk_laravel_cms.git).
