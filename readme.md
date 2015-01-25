@@ -39,7 +39,7 @@ The Frozennode framework is open-sourced software licensed under the [MIT licens
 * Laracast Video Tutorials [Laracast website](https://laracasts.com/).
 * Codebright PDF Book Tutorial [Link 1](http://www.blog.flds.fr/site/assets/files/1212/codebright-1.pdf) [Link 2](http://demo.assets.adyax.com/sites/default/files/asset/document/laravel-codebright-2013-06.pdf).
 * [Video on Frozennode base installation](http://vimeo.com/64693369).
-* [Laravel Documtation](http://laravel.com/docs/4.2)
+* [Laravel Documentation](http://laravel.com/docs/4.2)
 
 ## Pre-Installation Recommendations
 * Install [nodejs](http://nodejs.org/download/).
