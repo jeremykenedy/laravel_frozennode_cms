@@ -18,7 +18,7 @@
 // 	return View::make('pages.home');
 // });
 
-
+//HOMEPAGE ROUTE
 Route::any('/', array(
 	"as" => "home",
 	function(){
@@ -26,6 +26,10 @@ Route::any('/', array(
 	}	
 ));
 
+//LOGIN PAGE ROUTE
+Route::any('login',function(){
+	return View::make('admin.pages.login');
+});
 
 // Route::any('admin',function(){
 // 	return View::make('hello');

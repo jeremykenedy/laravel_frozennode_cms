@@ -67,7 +67,7 @@ return array(
 		'directors',
 		'theaters',
 		'Settings' => array('settings.site'),
-		//'settings.ecommerce',
+		'settings.ecommerce',
 	),
 
 
@@ -79,8 +79,8 @@ return array(
 	 */
 	'permission'=> function()
 	{
-		//return Auth::check();
-		return true;
+		return Auth::check();
+		//return true;
 		//return Auth::user()->hasRole('admin');
 	},
 
@@ -119,7 +119,7 @@ return array(
 	 *
 	 * @type string
 	 */
-	'login_path' => 'user/login',
+	'login_path' => 'login',
 
 	/**
 	 * The logout path is the path where Administrator will send the user when they click the logout link
