@@ -55,6 +55,7 @@ While this is mostly worked on from a mac, there is the funzies of wanting to do
 * Open MAMP, setup a new URL, select the directory of the cloned repository on your local machine, and then save and restart MAMP as prompted.
 * Setup database through [phpMyAdmin](http://localhost/MAMP/index.php?page=phpmyadmin&language=English) via the "Webstart" link on the MAMP homescreen.
 * You may need to comment out the .htaccess file in order to not get a 403 error.
+* Download and install [Composer for Windows](https://getcomposer.org/download/). During installation it will ask you where your php.exr file is locate, it is in the MAMP folder such as ```ruby E:\MAMP\bin\php\php5.3.23```
 
 ## Installation
 * Clone the Repository to your machine/server.  Private Repo (git@bitbucket.org:jeremykenedy/project_jk_laravel_cms.git).
