@@ -56,6 +56,7 @@ While this is mostly worked on from a mac, there is the funzies of wanting to do
 * Setup database through [phpMyAdmin](http://localhost/MAMP/index.php?page=phpmyadmin&language=English) via the "Webstart" link on the MAMP homescreen.
 * You may need to comment out the .htaccess file in order to not get a 403 error.
 * Download and install [Composer for Windows](https://getcomposer.org/download/). During installation it will ask you where your php.exr file is locate, it is in the MAMP folder such as ```E:\MAMP\bin\php\php5.3.23```
+ * [Check here if you encounter an HTTPS error preventing installation.](http://stackoverflow.com/questions/22763452/composer-not-install-in-windows-7)
 
 ## Installation
 * Clone the Repository to your machine/server.  Private Repo (git@bitbucket.org:jeremykenedy/project_jk_laravel_cms.git).
