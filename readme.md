@@ -43,8 +43,18 @@ The Frozennode framework is open-sourced software licensed under the [MIT licens
 
 ## Pre-Installation Recommendations
 * Install [nodejs](http://nodejs.org/download/).
-* Install [SASS/SCSS](http://sass-lang.com/install). (Boo SASS, YAY SCSS!)
+* Install [SASS/SCSS](http://sass-lang.com/install).
 * Install [MAMP](http://www.mamp.info/en/).
+
+### Windows Installation 
+While this is mostly worked on from a mac, there is the funzies of wanting to do it from Windows. So, here is one way how to set it up done on a Machine with Windows 8.1:
+
+* Download and install [MAMP for Windows](http://www.mamp.info/en/mamp_windows.html).  As alternatives,  you can use [WAMP](http://www.wampserver.com/en/) or [XAMPP](https://www.apachefriends.org/index.html). However, this example will be using MAMP.
+* Download and install [GIT for Windows](http://msysgit.github.io/).
+* Download and install [GitHub for Windows](https://windows.github.com/).
+* Run [GitHub for Windows](https://windows.github.com/), setup [GitHub](https://github.com/) account, and [clone repository](https://github.com/jeremykenedy/laravel_frozennode_cms.git).
+* Open MAMP, setup a new URL, select the directory of the cloned repository on your local machine, and then save and restart MAMP as prompted.
+* Setup database through [phpMyAdmin](http://localhost/MAMP/index.php?page=phpmyadmin&language=English) via the "Webstart" link on the MAMP homescreen.
 
 ## Installation
 * Clone the Repository to your machine/server.  Private Repo (git@bitbucket.org:jeremykenedy/project_jk_laravel_cms.git).
